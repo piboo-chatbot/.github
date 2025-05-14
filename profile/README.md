@@ -48,7 +48,7 @@
 # ✅ 기술 스택 & 사용한 모델
 
 ## 🔩 기술 스택
-<table align="center">
+<table>
   <tbody>
     <tr>
       <td><strong>Frontend</strong></td>
