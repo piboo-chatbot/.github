@@ -22,8 +22,8 @@
       <a href='https://github.com/Ohjunghh'>오정현</a><br />
     </td>
     <td align="center">
-      <img src="https://github.com/misnog-hub.png" width="200" alt="misong"/><br />
-      <a href='https://github.com/misnog-hub'>백미송</a><br />
+      <img src="https://github.com/misong-hub.png" width="200" alt="misong"/><br />
+      <a href='https://github.com/misong-hub'>백미송</a><br />
     </td>
   </thead>
 </table>
