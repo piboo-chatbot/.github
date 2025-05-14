@@ -181,7 +181,7 @@
       <td>7</td>
       <td>QLoRA 세팅 및 파인튜닝</td>
       <td>25.05.14-25.05.15</td>
-      <td>김성지, 백미송</td>
+      <td>김성지, 백미송, 현유경</td>
     </tr>
     <tr>
       <td>8</td>
@@ -191,12 +191,18 @@
     </tr>
     <tr>
       <td>9</td>
+      <td>FastAPI 백엔드 구현</td>
+      <td>25.05.14-25.05.15</td>
+      <td>오정현, 현유경</td>
+    </tr>
+    <tr>
+      <td>10</td>
       <td>통합 테스트 및 튜닝</td>
       <td>25.05.14-25.05.15</td>
       <td>ALL</td>
     </tr>
     <tr>
-      <td>10</td>
+      <td>11</td>
       <td>발표 자료 / 코드 정리</td>
       <td>25.05.15</td>
       <td>ALL</td>
@@ -207,7 +213,7 @@
 <br/><br/>
 
 # 📄 요구사항 명세서
-![image](https://github.com/user-attachments/assets/05605193-1eb4-4979-a6e0-c2fac7ee6536)
+![image](https://github.com/user-attachments/assets/6472fb8e-f88b-4bc8-ad8b-72a7fab0a9b8)
 
 # 📜 수집한 데이터 및 전처리 요약
 > 1. `oliveyoung.csv`: 올리브영 사이트의 스킨케어 항목에서 `화장품 이름`, `브랜드`, `가격`, `사용방법`, `화장품의 성분 목록`, `리뷰` 크롤링 <br/>
