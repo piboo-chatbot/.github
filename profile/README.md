@@ -222,6 +222,25 @@
 ## ☝🏻 전처리 과정
 
 ### 🫒 oliveyoung.csv
+- 원본 데이터
+![image](https://github.com/user-attachments/assets/03f7d5ea-19a9-4730-83bb-41142f4e9b41)
+**1. product_name 이름 전처리**
+![image](https://github.com/user-attachments/assets/07856015-f137-4f05-8465-8006780a3dde)
+![image](https://github.com/user-attachments/assets/0dcbbf83-c0c4-48ec-a070-4fda4f9b27c9)
+
+**2. usage 전처리**
+![image](https://github.com/user-attachments/assets/3e329f19-d1c3-4f90-b80e-cd0b76fe31b7)
+![image](https://github.com/user-attachments/assets/32da1dfa-a02b-4e80-862e-1455da468c27)
+
+**3. ingredient 전처리**
+![image](https://github.com/user-attachments/assets/0293a1ef-c404-4025-abe4-a0a5363d9410)
+![image](https://github.com/user-attachments/assets/650c7f04-f442-4976-93ce-a2e1a9d712d5)
+
+**4. reviews 전처리**
+![image](https://github.com/user-attachments/assets/1ec661ff-3bcb-4ab4-9626-27101d750ac5)
+![image](https://github.com/user-attachments/assets/e25a6c5b-fa3e-4098-b8b2-24eefa7db30f)
+
+
 
 ### 💄 coos.csv
 - 원본 데이터
@@ -249,5 +268,12 @@
 9. 테스트 계획 및 결과 보고서
 10. 진행 과정 중 프로그램 개선 노력
 11. 수행결과(테스트/시연 페이지)
-12. 한 줄 회고
+"Bllossom/llama-3.2-Korean-Bllossom-3B
+![image](https://github.com/user-attachments/assets/28906fa3-9824-4b20-97a0-58772c5c850c)
+![image](https://github.com/user-attachments/assets/b6486782-00f6-4927-b0d4-64528b3fa315)
+![image](https://github.com/user-attachments/assets/2673e2c2-e5bc-4415-b9ac-dae1753e97e2)
+
+
+13. 
+14. 한 줄 회고
 
