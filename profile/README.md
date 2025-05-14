@@ -122,9 +122,14 @@
   </tbody>
 </table>
 
-
+<br/><br/>
 
 # 시스템 아키텍처
+![llm_architecure](https://github.com/user-attachments/assets/8cf82757-389a-4f43-9fb6-cb00f33dac3f)
+
+
+<br/><br/>
+
 ### 📌 프로젝트 WBS (작업 분해 구조표)
 
 | 단계 | 주요 작업 |
