@@ -43,8 +43,79 @@
 2. 사용자가 보유한 화장품과의 궁합 분석을 통해 좋은 조합을 추천하고, 나쁜 조합에 대해서는 경고를 제공하여 피부 문제 예방에 도움
 3. 맞춤형 성분 분석과 제품 추천을 통해 사용자가 더욱 건강하고 효율적인 피부 관리가 가능하도록 지원
 
+<br/><br/>
 
-3. 기술 스택 & 사용한 모델 (임베딩 모델, LLM)
+# ⭐ 기술 스택 & 사용한 모델
+
+## 🔩 기술 스택
+<table align="center">
+  <tbody>
+    <tr>
+      <td><strong>Frontend</strong></td>
+      <td>
+        <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Backend</strong></td>
+      <td>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td><strong>AI/LLM & RAG</strong></td>
+      <td>
+        <img src="https://img.shields.io/badge/LangChain-000000?style=for-the-badge">
+        <img src="https://img.shields.io/badge/ChromaDB-FFCC00?style=for-the-badge">
+        <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
+        <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
+        <img src="https://img.shields.io/badge/RAG-4B8BBE?style=for-the-badge">
+        <img src="https://img.shields.io/badge/QLoRA-8BC34A?style=for-the-badge">
+        <img src="https://img.shields.io/badge/RunPod-EE4C2C?style=for-the-badge">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br/><br/>
+
+## 🤖 사용한 모델
+<table>
+  <thead>
+    <tr>
+      <th>역할</th>
+      <th>모델</th>
+      <th>플랫폼</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>문서 임베딩</td>
+      <td>all-MiniLM-L6-v2</td>
+      <td>
+        <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
+      </td>
+    </tr>
+    <tr>
+      <td>QA 데이터 생성 (RAG 기반)</td>
+      <td>GPT-4o</td>
+      <td>
+        <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td>파인튜닝 사전 학습 모델</td>
+      <td>llama-3-Korean-Bllossom-8B</td>
+      <td>
+        <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 4. 시스템 아키텍처
 5. WBS
 6. 요구사항 명세서
@@ -54,3 +125,4 @@
 10. 진행 과정 중 프로그램 개선 노력
 11. 수행결과(테스트/시연 페이지)
 12. 한 줄 회고
+
