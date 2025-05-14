@@ -10,7 +10,7 @@
 <table align="center">
   <thead>
     <td align="center">
-      <img src="" width=200 alt="seongji"/><br />
+      <img src="https://github.com/kimseoungji0801.png" width=200 alt="seongji"/><br />
       <a href='https://github.com/kimseoungji0801'>김성지</a><br />
     </td>
     <td align="center">
@@ -18,11 +18,11 @@
       <a href='https://github.com/yugyeongh'>현유경</a><br />
     </td>
     <td align="center">
-      <img src="" width=200 alt="junghyun"/><br />
-      <a href='https://github.com'>오정현</a><br />
+      <img src="https://github.com/Ohjunghh.png" width=200 alt="junghyun"/><br />
+      <a href='https://github.com/Ohjunghh'>오정현</a><br />
     </td>
     <td align="center">
-      <img src="" width="200" alt="misong"/><br />
+      <img src="https://github.com/" width="200" alt="misong"/><br />
       <a href='https://github.com/'>백미송</a><br />
     </td>
   </thead>
