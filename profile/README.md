@@ -11,7 +11,7 @@
   <thead>
     <td align="center">
       <img src="" width=200 alt="seongji"/><br />
-      <a href='https://github.com'>김성지</a><br />
+      <a href='https://github.com/kimseoungji0801'>김성지</a><br />
     </td>
     <td align="center">
       <img src="https://github.com/yugyeongh.png" width=200 alt="yugyeong"/><br />
