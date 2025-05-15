@@ -213,6 +213,7 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
 # 📄 요구사항 명세서
 ![image](https://github.com/user-attachments/assets/6472fb8e-f88b-4bc8-ad8b-72a7fab0a9b8)
 
+<br/><br/>
 
 # 🪼 시스템 아키텍처
 ![llm_architecure](https://github.com/user-attachments/assets/8cf82757-389a-4f43-9fb6-cb00f33dac3f)
@@ -231,6 +232,8 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
 
 ## 쿠스 크롤링
 <img width="864" alt="coos_crw" src="https://github.com/user-attachments/assets/09da20e2-7178-478a-80fc-eee3f1120590"> </br> 
+
+<br/>
 
 ## ☝🏻 전처리 과정
 
@@ -304,11 +307,10 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
 <br/><br/>
 
 # DB 연동 구현 코드
+[구글 드라이브 링크](https://drive.google.com/drive/u/0/folders/1IpsUk4_NFOL92nppOb0HCspDQQ6YUbRr)
 
-8. DB 연동 구현 코드 (링크첨부)
-9. 테스트 계획 및 결과 보고
-10. 진행 과정 중 프로그램 개선 노력 </br> 
-#### 벡터 DB 변경
+
+### 1️⃣ 벡터 DB 변경
 
 - 초기에는 Faiss를 사용했으나, 대규모 데이터에 최적화된 라이브러리여서  
   40,000개 정도의 데이터 규모에는 적합하지 않다고 판단
@@ -316,7 +318,7 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
 - 스타트업에서 많이 사용하는 Chroma로 변경하여,  
   LangChain과의 호환성 및 개발 편의성을 높임 </br> 
 
-#### 프롬프트 수정
+### 2️⃣ 프롬프트 수정
 - 프롬프트에 구체적인 질문-답변 예시를 포함시켜 모델이 더 정확하고 자연스럽게 응답할 수 있도록 개선 </br> 
 ```python
 [질문 & 답변 예시3]
@@ -335,7 +337,10 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
 3. AHC 클렌징 폼 (퓨어 리얼 아이 크림 폼)
    - 추천 이유: 마데카소사이드와 히알루론산이 세정 후에도 피부를 진정시키고 보습을 유지시켜 당김 없이 클렌징 가능
    - 세정력: ★★★★
-``` 
+```
+
+<br/><br/>
+
 # 수행결과(테스트/시연 페이지)
 ## 🎨 Frontend  
 Figma로 설계된 디자인 시안을 바탕으로,  Streamlit을 통해 간단하고 빠른 사용자 인터페이스를 구현
@@ -345,14 +350,20 @@ Figma로 설계된 디자인 시안을 바탕으로,  Streamlit을 통해 간단
   <img src="https://github.com/user-attachments/assets/0785f9b4-aea6-49dd-9500-b176800a257c" width="300"/>
 </div>
 
+<br/>
+
 ## 🛠️ Backend
 
 #### 주요 기능 및 처리 흐름
 ##### 모델과 프롬프트 체인 결합  
 - 파인튜닝된 QLoRA 모델과 프롬프트 템플릿을 결합하여 하나의 체인 생성  
 - 프롬프트 내에 대화 이력을 포함하여 문맥을 유지하며 응답 생성 
-</br>  
-**체인 생성**   </br> 
+</br>
+
+
+<strong>체인 생성</strong>
+
+</br> 
 
   ```python
 def get_chain_with_model(model):
@@ -398,14 +409,18 @@ def get_chain_with_model(model):
     )
 ```
 
+</br></br>
+
 ## 🔧 Finetuning
 ### 사용자 질문 데이터 생성 및 학습  
 - 100개의 예시 사용자 질문 생성
 - 크롤링한 화장품 성분 및 리뷰 문서로 RAG 모델에 질의  
 - 총 100쌍의 질문-답변 초안 데이터를 생성  
 - 이 중 100쌍을 선별하여 QLoRA 기법으로 사전 학습(파인튜닝) 진행 
-</br> 
-### 대상 모델
+</br>
+
+### 대상 모델 
+<br/>
 #### 🪷 Bllossom/llama-3.2-Korean-Bllossom-3B
 Bllossom 모델을 QLoRA 방식으로 100개 데이터로 파인튜닝한 결과, 초기에는 손실이 빠르게 감소했지만 후반부로 갈수록 수렴 속도가 둔화되었으며, 향후 추가 개선이 필요한 것으로 분석 
 
@@ -423,8 +438,9 @@ Mistral 모델을 QLoRA 방식으로 100개 데이터에 파인튜닝한 결과,
 <img src="https://github.com/user-attachments/assets/0a8fc297-a32a-42f5-a46b-7e2f20ea6f7f">
 <img src="https://github.com/user-attachments/assets/f83893ec-25e1-43b5-8dad-3f94d5de241e">
 
+</br></br>
 
-13. 개선 사항
+# 🚨 개선 사항
 
 1. **QLoRA 파인튜닝 모델 성능 한계**  
    현재 사용된 QLoRA 파인튜닝 모델은 약 100개의 QA 데이터셋으로 학습되었기 때문에,  
@@ -442,5 +458,11 @@ Mistral 모델을 QLoRA 방식으로 100개 데이터에 파인튜닝한 결과,
    이를 해결하기 위해 리뷰 데이터를 요약하여 토큰 수를 줄이고, 오류를 최소화하는 방안을 적용할 예정입니다.
 </br> 
 
-14. 한 줄 회고
+# ✅ 한 줄 회고
+| 팀원  | 한 줄 회고                 |
+|-------|----------------------------|
+| 미송  |  |
+| 정현  |  |
+| 유경  |  |
+| 성지  |  |
 
