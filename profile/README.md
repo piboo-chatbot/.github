@@ -265,15 +265,36 @@
 # DB 연동 구현 코드
 
 8. DB 연동 구현 코드 (링크첨부)
-9. 테스트 계획 및 결과 보고서
+9. 테스트 계획 및 결과 보고
 10. 진행 과정 중 프로그램 개선 노력
-11. 수행결과(테스트/시연 페이지)
-"Bllossom/llama-3.2-Korean-Bllossom-3B
-![image](https://github.com/user-attachments/assets/28906fa3-9824-4b20-97a0-58772c5c850c)
-![image](https://github.com/user-attachments/assets/b6486782-00f6-4927-b0d4-64528b3fa315)
-![image](https://github.com/user-attachments/assets/2673e2c2-e5bc-4415-b9ac-dae1753e97e2)
 
+# 수행결과(테스트/시연 페이지)
+## - frontend
+Figma로 디자인한 후, Streamlit으로 빠르고 직관적으로 구현
+## - backend
+## 🔧 Finetuning 대상 모델
 
-13. 
+### 🪷 Bllossom/llama-3.2-Korean-Bllossom-3B
+Bllossom 모델을 QLoRA 방식으로 100개 데이터로 파인튜닝한 결과, 초기에는 손실이 빠르게 감소했지만 후반부로 갈수록 수렴 속도가 둔화되었으며, 향후 추가 개선이 필요한 것으로 분석 
+
+<img src="https://github.com/user-attachments/assets/28906fa3-9824-4b20-97a0-58772c5c850c">
+<img src="https://github.com/user-attachments/assets/b6486782-00f6-4927-b0d4-64528b3fa315">
+<img src="https://github.com/user-attachments/assets/2673e2c2-e5bc-4415-b9ac-dae1753e97e2">
+
+---
+
+### 🌊 mistralai/Mistral-7B-Instruct-v0.1 
+Mistral 모델을 QLoRA 방식으로 100개 데이터에 파인튜닝한 결과, 훈련 손실과 검증 손실이 모두 점차 감소했으며 약 72 스텝 이후 EarlyStopping 조건을 만족하여 학습이 조기에 종료 
+
+<img src="https://github.com/user-attachments/assets/0a8fc297-a32a-42f5-a46b-7e2f20ea6f7f">
+<img src="https://github.com/user-attachments/assets/f83893ec-25e1-43b5-8dad-3f94d5de241e">
+
+---
+
+### 🐋 beomi/KoAlpaca-Polyglot-12.8B
+해당 모델은 Hugging Face 인증 오류로 인해 접근이 제한되어, 본 프로젝트에서는 파인튜닝을 진행하지 못함 
+
+<img src="https://github.com/user-attachments/assets/783a30c3-875e-443d-bef5-0306e8227965">
+
 14. 한 줄 회고
 
