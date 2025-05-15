@@ -198,7 +198,9 @@
     </tr>
     <tr>
       <td>파인튜닝 사전 학습 모델</td>
-      <td>llama-3-Korean-Bllossom-8B</td>
+      <td>llama-3-Korean-Bllossom-8B, 
+mistralai/Mistral-7B-Instruct-v0.1, 
+beomi/KoAlpaca-Polyglot-12.8B</td>
       <td>
         <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
       </td>
@@ -228,27 +230,30 @@
 <img width="864" alt="olive_crw_using" src="https://github.com/user-attachments/assets/592756a0-0509-43bb-aa01-2f2c166b1309" />
 <img width="864" alt="olive_reviews" src="https://github.com/user-attachments/assets/bb3ec61b-a4f2-4659-8771-a01897aca5fa" />
 
+## 쿠스 크롤링
+<img width="864" alt="coos_crw" src="https://github.com/user-attachments/assets/09da20e2-7178-478a-80fc-eee3f1120590"> </br> 
 
 ## ☝🏻 전처리 과정
 
-### 🫒 oliveyoung.csv
-- 원본 데이터
-![image](https://github.com/user-attachments/assets/03f7d5ea-19a9-4730-83bb-41142f4e9b41)
-**1. product_name 이름 전처리**
-![image](https://github.com/user-attachments/assets/07856015-f137-4f05-8465-8006780a3dde)
-![image](https://github.com/user-attachments/assets/0dcbbf83-c0c4-48ec-a070-4fda4f9b27c9)
+### 🫒 oliveyoung.csv </br> 
+- 원본 데이터  </br>  
+<img width="800" src="https://github.com/user-attachments/assets/03f7d5ea-19a9-4730-83bb-41142f4e9b41"> </br>
+</br> 
+**1. product_name 이름 전처리** </br> 
+<img width="800" src="https://github.com/user-attachments/assets/07856015-f137-4f05-8465-8006780a3dde">  </br> 
+<img width="800" src="https://github.com/user-attachments/assets/0dcbbf83-c0c4-48ec-a070-4fda4f9b27c9"> </br> 
 
-**2. usage 전처리**
-![image](https://github.com/user-attachments/assets/3e329f19-d1c3-4f90-b80e-cd0b76fe31b7)
-![image](https://github.com/user-attachments/assets/32da1dfa-a02b-4e80-862e-1455da468c27)
+**2. usage 전처리** </br> 
+<img width="800" src="https://github.com/user-attachments/assets/3e329f19-d1c3-4f90-b80e-cd0b76fe31b7"> </br> 
+<img width="800" src="https://github.com/user-attachments/assets/32da1dfa-a02b-4e80-862e-1455da468c27"> </br> 
+ 
+**3. ingredient 전처리** </br> 
+<img width="800" src="https://github.com/user-attachments/assets/0293a1ef-c404-4025-abe4-a0a5363d9410"> </br> 
+<img width="800" src="https://github.com/user-attachments/assets/650c7f04-f442-4976-93ce-a2e1a9d712d5"> </br> 
 
-**3. ingredient 전처리**
-![image](https://github.com/user-attachments/assets/0293a1ef-c404-4025-abe4-a0a5363d9410)
-![image](https://github.com/user-attachments/assets/650c7f04-f442-4976-93ce-a2e1a9d712d5)
-
-**4. reviews 전처리**
-![image](https://github.com/user-attachments/assets/1ec661ff-3bcb-4ab4-9626-27101d750ac5)
-![image](https://github.com/user-attachments/assets/e25a6c5b-fa3e-4098-b8b2-24eefa7db30f)
+**4. reviews 전처리** </br> 
+<img width="800" src="https://github.com/user-attachments/assets/1ec661ff-3bcb-4ab4-9626-27101d750ac5"> </br> 
+<img width="800" src="https://github.com/user-attachments/assets/e25a6c5b-fa3e-4098-b8b2-24eefa7db30f"> </br> </br> 
 
 
 
@@ -276,8 +281,35 @@
 
 8. DB 연동 구현 코드 (링크첨부)
 9. 테스트 계획 및 결과 보고
-10. 진행 과정 중 프로그램 개선 노력
+10. 진행 과정 중 프로그램 개선 노력 </br> 
+#### 벡터 DB 변경
 
+- 초기에는 Faiss를 사용했으나, 대규모 데이터에 최적화된 라이브러리여서  
+  40,000개 정도의 데이터 규모에는 적합하지 않다고 판단
+
+- 스타트업에서 많이 사용하는 Chroma로 변경하여,  
+  LangChain과의 호환성 및 개발 편의성을 높임 </br> 
+
+#### 프롬프트 수정
+- 프롬프트에 구체적인 질문-답변 예시를 포함시켜 모델이 더 정확하고 자연스럽게 응답할 수 있도록 개선 </br> 
+```python
+[질문 & 답변 예시3]
+질문: 세척력 좋은 클렌징폼 추천해줘
+답변:
+세척력이 좋은 클렌징폼을 찾고 계시다면, 모공 속 노폐물까지 깔끔히 제거해주는 제품 위주로 추천드릴게요.
+
+1. 아니스프리 화산송이 모공 클렌징 폼
+   - 추천 이유: 제주 화산송이 파우더가 피지와 노폐물을 강력하게 흡착하여 모공까지 깨끗하게 세정해줌.
+   - 세정력: ★★★★★
+
+2. 라로슈포제 에빠끌라 퓨리파잉 클렌징 젤
+   - 추천 이유: 징크 PCA(피지 조절 성분)와 라로슈포제 온천수가 과도한 유분을 잡아주며 자극 없이 세정함
+   - 세정력: ★★★★
+
+3. AHC 클렌징 폼 (퓨어 리얼 아이 크림 폼)
+   - 추천 이유: 마데카소사이드와 히알루론산이 세정 후에도 피부를 진정시키고 보습을 유지시켜 당김 없이 클렌징 가능
+   - 세정력: ★★★★
+``` 
 # 수행결과(테스트/시연 페이지)
 ## 🎨 Frontend  
 Figma로 설계된 디자인 시안을 바탕으로,  Streamlit을 통해 간단하고 빠른 사용자 인터페이스를 구현
@@ -346,9 +378,6 @@ def get_chain_with_model(model):
     )
 ```
 
-##### 참고
-FastAPI와 Streamlit 연동
-
 ## 🔧 Finetuning 대상 모델
 
 ### 🪷 Bllossom/llama-3.2-Korean-Bllossom-3B
@@ -374,6 +403,24 @@ Mistral 모델을 QLoRA 방식으로 100개 데이터에 파인튜닝한 결과,
 해당 모델은 Hugging Face 인증 오류로 인해 접근이 제한되어, 본 프로젝트에서는 파인튜닝을 진행하지 못함 
 
 <img src="https://github.com/user-attachments/assets/783a30c3-875e-443d-bef5-0306e8227965">
+
+13. 개선 사항
+
+1. **QLoRA 파인튜닝 모델 성능 한계**  
+   현재 사용된 QLoRA 파인튜닝 모델은 약 100개의 QA 데이터셋으로 학습되었기 때문에,  
+   다양한 질문에 대한 일반화 성능에 한계가 있습니다.  
+   향후에는 보다 많은 데이터를 추가하여 학습시킴으로써 모델의 응답 품질을 향상시킬 예정입니다.
+
+2. **웹 버전 UI 개선 계획**  
+   현재 PiBoo의 사용자 인터페이스는 모바일 최적화된 휴대폰 화면 형태로 디자인되어 있습니다.  
+   하지만 다음 프로젝트에서는 Django와 HTML 기반의 웹사이트 제작을 배우게 되어,  
+   웹 버전 형태로 구현하여 다양한 환경에서도 원활하게 사용할 수 있도록 개선할 계획입니다.
+
+3. **문서 임베딩 처리 오류 개선**  
+   현재 문서 임베딩 과정에서 토큰 수가 많은 리뷰 데이터가 포함될 경우,  
+   임베딩 처리 중 오류가 발생하거나 VectorDB에 저장되지 않는 문제가 발생합니다.  
+   이를 해결하기 위해 리뷰 데이터를 요약하여 토큰 수를 줄이고, 오류를 최소화하는 방안을 적용할 예정입니다.
+</br> 
 
 14. 한 줄 회고
 
