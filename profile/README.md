@@ -271,9 +271,11 @@
 # 수행결과(테스트/시연 페이지)
 ## 🎨 Frontend  
 Figma로 설계된 디자인 시안을 바탕으로,  Streamlit을 통해 간단하고 빠른 사용자 인터페이스를 구현
-<img src="https://github.com/user-attachments/assets/fef2d7ab-0a4a-469a-b423-272d55d02f69">
-<img src="https://github.com/user-attachments/assets/423424d3-8938-4e8c-8b3f-776d20f7b04e">
-<img src="https://github.com/user-attachments/assets/0785f9b4-aea6-49dd-9500-b176800a257c">
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/fef2d7ab-0a4a-469a-b423-272d55d02f69" width="300"/>
+  <img src="https://github.com/user-attachments/assets/423424d3-8938-4e8c-8b3f-776d20f7b04e" width="300"/>
+  <img src="https://github.com/user-attachments/assets/0785f9b4-aea6-49dd-9500-b176800a257c" width="300"/>
+</div>
 
 ## 🛠️ Backend
 
@@ -283,8 +285,10 @@ Figma로 설계된 디자인 시안을 바탕으로,  Streamlit을 통해 간단
 Bllossom 모델을 QLoRA 방식으로 100개 데이터로 파인튜닝한 결과, 초기에는 손실이 빠르게 감소했지만 후반부로 갈수록 수렴 속도가 둔화되었으며, 향후 추가 개선이 필요한 것으로 분석 
 
 <img src="https://github.com/user-attachments/assets/28906fa3-9824-4b20-97a0-58772c5c850c">
-<img src="https://github.com/user-attachments/assets/b6486782-00f6-4927-b0d4-64528b3fa315">
-<img src="https://github.com/user-attachments/assets/2673e2c2-e5bc-4415-b9ac-dae1753e97e2">
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b6486782-00f6-4927-b0d4-64528b3fa315" width="400"/>
+  <img src="https://github.com/user-attachments/assets/2673e2c2-e5bc-4415-b9ac-dae1753e97e2" width="400"/>
+</div>
 
 ---
 
