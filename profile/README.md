@@ -53,82 +53,6 @@
 
 <br/><br/>
 
-# ✅ 기술 스택 & 사용한 모델
-
-## 🔩 기술 스택
-<table>
-  <tbody>
-    <tr>
-      <td><strong>Frontend</strong></td>
-      <td>
-        <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white">
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Backend</strong></td>
-      <td>
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
-      </td>
-    </tr>
-    <tr>
-      <td><strong>AI/LLM & RAG</strong></td>
-      <td>
-        <img src="https://img.shields.io/badge/LangChain-000000?style=for-the-badge">
-        <img src="https://img.shields.io/badge/ChromaDB-FFCC00?style=for-the-badge">
-        <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
-        <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
-        <img src="https://img.shields.io/badge/RAG-4B8BBE?style=for-the-badge">
-        <img src="https://img.shields.io/badge/QLoRA-8BC34A?style=for-the-badge">
-        <img src="https://img.shields.io/badge/RunPod-EE4C2C?style=for-the-badge">
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<br/><br/>
-
-## 🤖 사용한 모델
-<table>
-  <thead>
-    <tr>
-      <th>역할</th>
-      <th>모델</th>
-      <th>플랫폼</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>문서 임베딩</td>
-      <td>all-MiniLM-L6-v2</td>
-      <td>
-        <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
-      </td>
-    </tr>
-    <tr>
-      <td>QA 데이터 생성 (RAG 기반)</td>
-      <td>GPT-4o</td>
-      <td>
-        <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
-      </td>
-    </tr>
-    <tr>
-      <td>파인튜닝 사전 학습 모델</td>
-      <td>llama-3-Korean-Bllossom-8B</td>
-      <td>
-        <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<br/><br/>
-
-# 🪼 시스템 아키텍처
-![llm_architecure](https://github.com/user-attachments/assets/8cf82757-389a-4f43-9fb6-cb00f33dac3f)
-
-<br/><br/>
-
 # 📌 WBS
 
 <table border="1">
@@ -212,12 +136,98 @@
 
 <br/><br/>
 
+
+# ✅ 기술 스택 & 사용한 모델
+
+## 🔩 기술 스택
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Frontend</strong></td>
+      <td>
+        <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Backend</strong></td>
+      <td>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td><strong>AI/LLM & RAG</strong></td>
+      <td>
+        <img src="https://img.shields.io/badge/LangChain-000000?style=for-the-badge">
+        <img src="https://img.shields.io/badge/ChromaDB-FFCC00?style=for-the-badge">
+        <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
+        <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
+        <img src="https://img.shields.io/badge/RAG-4B8BBE?style=for-the-badge">
+        <img src="https://img.shields.io/badge/QLoRA-8BC34A?style=for-the-badge">
+        <img src="https://img.shields.io/badge/RunPod-EE4C2C?style=for-the-badge">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br/><br/>
+
+## 🤖 사용한 모델
+<table>
+  <thead>
+    <tr>
+      <th>역할</th>
+      <th>모델</th>
+      <th>플랫폼</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>문서 임베딩</td>
+      <td>all-MiniLM-L6-v2</td>
+      <td>
+        <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
+      </td>
+    </tr>
+    <tr>
+      <td>QA 데이터 생성 (RAG 기반)</td>
+      <td>GPT-4o</td>
+      <td>
+        <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
+      </td>
+    </tr>
+    <tr>
+      <td>파인튜닝 사전 학습 모델</td>
+      <td>llama-3-Korean-Bllossom-8B</td>
+      <td>
+        <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br/><br/>
+
+
 # 📄 요구사항 명세서
 ![image](https://github.com/user-attachments/assets/6472fb8e-f88b-4bc8-ad8b-72a7fab0a9b8)
 
+
+# 🪼 시스템 아키텍처
+![llm_architecure](https://github.com/user-attachments/assets/8cf82757-389a-4f43-9fb6-cb00f33dac3f)
+
+<br/><br/>
+
 # 📜 수집한 데이터 및 전처리 요약
-> 1. `oliveyoung.csv`: 올리브영 사이트의 스킨케어 항목에서 `화장품 이름`, `브랜드`, `가격`, `사용방법`, `화장품의 성분 목록`, `리뷰` 크롤링 <br/>
+> 1. `oliveyoung.csv`: 올리브영 사이트의 카테고리 항목에서 스킨케어,마스크팩,클랜징,선케어 4가지의 항목을 크롤링
 > 2. `coos.csv`: COOS 사이트에서 `성분`, `성분의 설명` 데이터 크롤링 <br/>
+
+## 올리브영 크롤링
+<img width="864" alt="olive_crw" src="https://github.com/user-attachments/assets/318ce004-9f6c-4dd0-a06d-78b9d50cf804" />
+<img width="864" alt="olive_crw_pro" src="https://github.com/user-attachments/assets/1f74f92b-f959-405b-a032-4c0ffab54c63" />
+<img width="864" alt="olive_crw_using" src="https://github.com/user-attachments/assets/592756a0-0509-43bb-aa01-2f2c166b1309" />
+<img width="864" alt="olive_reviews" src="https://github.com/user-attachments/assets/bb3ec61b-a4f2-4659-8771-a01897aca5fa" />
+
 
 ## ☝🏻 전처리 과정
 
