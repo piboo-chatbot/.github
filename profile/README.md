@@ -269,9 +269,14 @@
 10. 진행 과정 중 프로그램 개선 노력
 
 # 수행결과(테스트/시연 페이지)
-## - frontend
-Figma로 디자인한 후, Streamlit으로 빠르고 직관적으로 구현
-## - backend
+## 🎨 Frontend  
+Figma로 설계된 디자인 시안을 바탕으로,  Streamlit을 통해 간단하고 빠른 사용자 인터페이스를 구현
+<img src="https://github.com/user-attachments/assets/fef2d7ab-0a4a-469a-b423-272d55d02f69">
+<img src="https://github.com/user-attachments/assets/423424d3-8938-4e8c-8b3f-776d20f7b04e">
+<img src="https://github.com/user-attachments/assets/0785f9b4-aea6-49dd-9500-b176800a257c">
+
+## 🛠️ Backend
+
 ## 🔧 Finetuning 대상 모델
 
 ### 🪷 Bllossom/llama-3.2-Korean-Bllossom-3B
