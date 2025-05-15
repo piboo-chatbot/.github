@@ -216,7 +216,8 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
 <br/><br/>
 
 # 🪼 시스템 아키텍처
-![llm_architecure](https://github.com/user-attachments/assets/8cf82757-389a-4f43-9fb6-cb00f33dac3f)
+![Untitled](https://github.com/user-attachments/assets/52b9f510-8926-40d2-b36b-e19023ff675d)
+
 
 <br/><br/>
 
