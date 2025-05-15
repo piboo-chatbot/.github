@@ -87,13 +87,13 @@
       <td>4</td>
       <td>RAG 시스템 구조 설계 및 분석</td>
       <td>25.05.11-25.05.13</td>
-      <td>현유경</td>
+      <td>오정현, 현유경</td>
     </tr>
     <tr>
       <td>5</td>
       <td>VectorDB 구조 설계 및 구축 (ChromaDB)</td>
       <td>25.05.13-25.05.14</td>
-      <td>현유경</td>
+      <td>김성지, 현유경</td>
     </tr>
     <tr>
       <td>6</td>
@@ -199,8 +199,7 @@
     <tr>
       <td>파인튜닝 사전 학습 모델</td>
       <td>llama-3-Korean-Bllossom-8B, 
-mistralai/Mistral-7B-Instruct-v0.1, 
-beomi/KoAlpaca-Polyglot-12.8B</td>
+mistralai/Mistral-7B-Instruct-v0.1</td>
       <td>
         <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black">
       </td>
@@ -236,22 +235,49 @@ beomi/KoAlpaca-Polyglot-12.8B</td>
 ## ☝🏻 전처리 과정
 
 ### 🫒 oliveyoung.csv </br> 
-- 원본 데이터  </br>  
+- 원본 데이터 
 <img width="800" src="https://github.com/user-attachments/assets/03f7d5ea-19a9-4730-83bb-41142f4e9b41"> </br>
-</br> 
-**1. product_name 이름 전처리** </br> 
+</br> </br> 
+**1. product_name 이름 전처리**
+  - 괄호 `()` 와 대괄호 `[]` 안의 내용 삭제  
+  - 특정 패턴 (예: 숫자+종, 기초 2종, 택1 등) 제거  
+  - 슬래시(`/`) 뒤의 내용 삭제하고 앞 부분만 사용  
+  - 용량 단위 (예: 170ml, 50g 등) 삭제  
+  - 리필, 증정, 기획, 한정 등 마케팅성 문구 삭제  
+  - 마스크팩 관련 숫자+매수 패턴 삭제 (예: 10+1매, 10매)  
+  - `'+'` 기호와 그 주변 공백을 적절히 정리  
+  - 중복된 공백을 하나로 줄이고 양쪽 공백 제거  
 <img width="800" src="https://github.com/user-attachments/assets/07856015-f137-4f05-8465-8006780a3dde">  </br> 
 <img width="800" src="https://github.com/user-attachments/assets/0dcbbf83-c0c4-48ec-a070-4fda4f9b27c9"> </br> 
 
-**2. usage 전처리** </br> 
+**2. usage 전처리**  
+  - 특수기호 (■) 제거   
 <img width="800" src="https://github.com/user-attachments/assets/3e329f19-d1c3-4f90-b80e-cd0b76fe31b7"> </br> 
 <img width="800" src="https://github.com/user-attachments/assets/32da1dfa-a02b-4e80-862e-1455da468c27"> </br> 
  
-**3. ingredient 전처리** </br> 
+**3. ingredient 전처리** 
+  - 맨 앞 특수기호 (예: `*`, `+`, `/`, `-`, `:`) 제거  
+  - 대괄호 안에 콜론(`:`)으로 시작하는 내용 삭제  
+  - 숫자+ppm 단위 삭제  
+  - 괄호 `()` 와 대괄호 `[]` 안의 내용 삭제  
+  - 숫자+% 삭제  
+  - 특수기호 및 구성품 관련 문구 삭제  
+  - 주석/설명 문장 삭제 (특정 시작 문구 기준)  
+  - 쉼표와 공백 정리  
 <img width="800" src="https://github.com/user-attachments/assets/0293a1ef-c404-4025-abe4-a0a5363d9410"> </br> 
 <img width="800" src="https://github.com/user-attachments/assets/650c7f04-f442-4976-93ce-a2e1a9d712d5"> </br> 
 
-**4. reviews 전처리** </br> 
+**4. reviews 전처리** 
+  - 줄바꿈 문자 삭제 또는 마침표로 변환  
+  - 괄호 `()`, `[]`, `{}` 등 모든 괄호 제거  
+  - 한글 자음/모음만 있는 경우 마침표로 변환  
+  - 따옴표 제거  
+  - 쉼표 및 마침표 2개 이상 → 하나로 통일  
+  - 중복 공백 제거 및 마침표로 변환  
+  - 가격/수치 정보 삭제 (예: 100%, 5백원)  
+  - 의미가 적은 외래어 및 홍보어 삭제 (예: good, best, 강추 등)  
+  - 한글, 숫자, 공백, 마침표 외 문자 삭제 (이모지 등 포함)  
+  - 표준어 사전을 활용한 오타 및 비표준어 치환 (예: 네용 → 네요, 해용 → 해요 등)
 <img width="800" src="https://github.com/user-attachments/assets/1ec661ff-3bcb-4ab4-9626-27101d750ac5"> </br> 
 <img width="800" src="https://github.com/user-attachments/assets/e25a6c5b-fa3e-4098-b8b2-24eefa7db30f"> </br> </br> 
 
@@ -323,9 +349,9 @@ Figma로 설계된 디자인 시안을 바탕으로,  Streamlit을 통해 간단
 
 #### 주요 기능 및 처리 흐름
 ##### 1. 사용자 질문 데이터 생성 및 학습  
-- 300개의 예시 사용자 질문 생성
+- 100개의 예시 사용자 질문 생성
 - 크롤링한 화장품 성분 및 리뷰 문서로 RAG 모델에 질의  
-- 총 300쌍의 질문-답변 초안 데이터를 생성  
+- 총 100쌍의 질문-답변 초안 데이터를 생성  
 - 이 중 100쌍을 선별하여 QLoRA 기법으로 사전 학습(파인튜닝) 진행  
 
 ##### 2. 모델과 프롬프트 체인 결합  
@@ -397,12 +423,6 @@ Mistral 모델을 QLoRA 방식으로 100개 데이터에 파인튜닝한 결과,
 <img src="https://github.com/user-attachments/assets/0a8fc297-a32a-42f5-a46b-7e2f20ea6f7f">
 <img src="https://github.com/user-attachments/assets/f83893ec-25e1-43b5-8dad-3f94d5de241e">
 
----
-
-### 🐋 beomi/KoAlpaca-Polyglot-12.8B
-해당 모델은 Hugging Face 인증 오류로 인해 접근이 제한되어, 본 프로젝트에서는 파인튜닝을 진행하지 못함 
-
-<img src="https://github.com/user-attachments/assets/783a30c3-875e-443d-bef5-0306e8227965">
 
 13. 개선 사항
 
