@@ -350,6 +350,7 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
       <th>목적</th>
       <th>입력 예시</th>
       <th>기대 결과</th>
+      <th>실제 결과</th>
     </tr>
   </thead>
   <tbody>
@@ -358,24 +359,28 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
       <td>질문 의도에 적합한 답변 반환</td>
       <td>건성 피부가 겨울철에 사용할만한 크림 추천해줘</td>
       <td>화장품 목록 + 실제 사용자의 리뷰</td>
+      <td>![project03_test_case01](https://github.com/user-attachments/assets/1059344b-d9b7-4189-a4b9-03fb6ed5966b)</td>
     </tr>
     <tr>
       <td>CASE02</td>
       <td>화장품의 성분을 참고한 답변 반환</td>
       <td>잡티 제거에 좋은 성분을 가진 화장품은?</td>
       <td>질문에 알맞는 성분 추천 + 화장품 추천 + 화장품의 주요 성분</td>
+      <td>![project03_test_case02](https://github.com/user-attachments/assets/f099b5a8-4e0e-4a0c-a549-6eab0d7ef1e0)</td>
     </tr>
     <tr>
       <td>CASE03</td>
       <td>사용자가 실제 사용하고 있는 화장품과의 궁합 반환</td>
       <td>내가 넘버즈인 글루타치온 흔적 앰플을 가지고 있는데 이거랑 비타민이 함량된 세럼을 같이 써도 돼?</td>
       <td>질문 의도에 적합한 답변 + 궁합이 좋은 화장품 추천 + 화장품과의 궁합</td>
+      <td>![project03_test_case03](https://github.com/user-attachments/assets/1dd1b90c-c024-4634-b168-bb8e777ca706)</td>
     </tr>
     <tr>
       <td>CASE04</td>
       <td>특정 기능에 대한 시각화</td>
       <td>세척력 좋은 클렌징폼 추천해줘</td>
       <td>세척력이 좋은 화장품 + 화장품의 성분 설명과 함께 추천 이유 전달 + 세정력 시각화</td>
+      <td>![project03_test_case04](https://github.com/user-attachments/assets/2723220b-4cb0-4ef6-8b21-76b59969c516)</td>
     </tr>
   </tbody>
 </table>
