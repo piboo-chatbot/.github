@@ -1,9 +1,9 @@
 # 🌸 PiBoo: 성분부터 궁합까지, 똑똑한 화장품 도우미
 
 # 👥 팀 소개
-> SK네트웍스 Family AI 캠프 11기 3차 프로젝트 <br/>
+> SK네트웍스 Family AI 캠프 11기 4차 프로젝트 <br/>
 > 팀 명: 미피 (美Pi, MePi)🐰 <br/>
-> 기간: 2025.05.08 - 2025.05.15 <br/>
+> 기간: 2025.05.16 - 2025.06.11 <br/>
 
 ## 👤팀원 소개
 
@@ -67,68 +67,56 @@
   <tbody>
     <tr>
       <td>1</td>
-      <td>프로젝트 기획 및 주제 확정</td>
-      <td>25.05.04-25.05.08</td>
-      <td>ALL</td>
+      <td>스킨케어 질문 데이터 수집</td>
+      <td>25.05.24-25.05.25</td>
+      <td>김성지, 백미송</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>화장품, 성분 데이터 수집</td>
-      <td>25.05.08-25.05.10</td>
-      <td>김성지, 오정현, 현유경</td>
+      <td>데이터 전처리 및 정제</td>
+      <td>25.05.26-25.05.27</td>
+      <td>김성지</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>데이터 전처리 및 정제</td>
-      <td>25.05.10</td>
-      <td>김성지, 오정현, 현유경</td>
+      <td>QLoRA 학습 데이터 생성</td>
+      <td>25.05.28</td>
+      <td>백미송, 현유경</td>
     </tr>
     <tr>
       <td>4</td>
-      <td>RAG 시스템 구조 설계 및 분석</td>
-      <td>25.05.11-25.05.13</td>
-      <td>오정현, 현유경</td>
+      <td>백엔드 장고 변환</td>
+      <td>25.05.26-25.05.28</td>
+      <td>김성지, 오정현</td>
     </tr>
     <tr>
       <td>5</td>
-      <td>VectorDB 구조 설계 및 구축 (ChromaDB)</td>
-      <td>25.05.13-25.05.14</td>
-      <td>김성지, 현유경</td>
+      <td>QLoRA 세팅 및 파인튜닝</td>
+      <td>25.05.29-25.06.02</td>
+      <td>백미송, 현유경</td>
     </tr>
     <tr>
       <td>6</td>
-      <td>테스트 질의셋 작성 및 평가</td>
-      <td>25.05.13</td>
-      <td>백미송</td>
+      <td>HTML/CSS를 활용한 UI 구현</td>
+      <td>25.06.07-25.06.09</td>
+      <td>김성지, 오정현</td>
     </tr>
-    <tr>
-      <td>7</td>
-      <td>QLoRA 세팅 및 파인튜닝</td>
-      <td>25.05.14-25.05.15</td>
-      <td>김성지, 백미송, 현유경</td>
-    </tr>
-    <tr>
+<tr>
       <td>8</td>
-      <td>Streamlit 챗봇 UI 구현</td>
-      <td>25.05.12-25.05.14</td>
-      <td>백미송, 오정현</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>FastAPI 백엔드 구현</td>
-      <td>25.05.14-25.05.15</td>
-      <td>오정현, 현유경</td>
+      <td>AWS 배포</td>
+      <td>25.06.10</td>
+      <td>김성지,현유경</td>
     </tr>
     <tr>
       <td>10</td>
       <td>통합 테스트 및 튜닝</td>
-      <td>25.05.14-25.05.15</td>
+      <td>25.06.10</td>
       <td>ALL</td>
     </tr>
     <tr>
       <td>11</td>
       <td>발표 자료 / 코드 정리</td>
-      <td>25.05.15</td>
+      <td>25.06.11</td>
       <td>ALL</td>
     </tr>
   </tbody>
@@ -140,18 +128,21 @@
 # ✅ 기술 스택 & 사용한 모델
 
 ## 🔩 기술 스택
+
 <table>
   <tbody>
     <tr>
       <td><strong>Frontend</strong></td>
       <td>
-        <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
+        <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS3&logoColor=white">
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black">
       </td>
     </tr>
     <tr>
       <td><strong>Backend</strong></td>
       <td>
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white">
+        <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=Django&logoColor=white">
         <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
       </td>
     </tr>
@@ -209,136 +200,68 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
 
 <br/><br/>
 
+# 🪼 시스템 아키텍처
+![Untitled](https://github.com/user-attachments/assets/52b9f510-8926-40d2-b36b-e19023ff675d)
+
+<br/><br/>
 
 # 📄 요구사항 명세서
 ![image](https://github.com/user-attachments/assets/6472fb8e-f88b-4bc8-ad8b-72a7fab0a9b8)
 
 <br/><br/>
+<h2>🖌️ 화면 설계서(Figma)</h2>
+<table cellspacing="0" cellpadding="20" style="border-collapse: collapse; width: 100%; text-align: center; margin-bottom: 40px;">
+  <tr>
+    <td style="width: 50%; background-color: #f2f2; border: 2px solid #ccc;">
+      <img src="https://github.com/user-attachments/assets/2e5fc06e-dd30-45cb-898f-3b7e4a32e7de" width="300" ><br>
+      <div><strong>메인화면</strong></div>
+    </td>
+    <td style="width: 50%; background-color: #f2f2f2; border: 2px solid #ccc;">
+      <img src="https://github.com/user-attachments/assets/d5696fc1-0ee5-42f3-a173-4c4ce409361d" width="300"><br>
+      <div><strong>로그인</strong></div>
+    </td>
+  </tr>
+</table>
 
-# 🪼 시스템 아키텍처
-![Untitled](https://github.com/user-attachments/assets/52b9f510-8926-40d2-b36b-e19023ff675d)
-
+<table cellspacing="0" cellpadding="20" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <tr>
+    <td style="width: 50%; background-color: #f2f2f2; border: 2px solid #ccc;">
+      <img src="https://github.com/user-attachments/assets/7306f66c-fd80-4365-9379-4cc9a9faf1be" width="300"><br>
+      <div><strong>회원가입</strong></div>
+    </td>
+    <td style="width: 50%; background-color: #f2f2f2; border: 2px solid #ccc;">
+      <img src="https://github.com/user-attachments/assets/55f10dc2-ee47-4550-b752-034fb02a19a4" width="300"><br>
+      <div><strong>챗봇</strong></div>
+    </td>
+  </tr>
+</table>
 
 <br/><br/>
 
+
+
 # 📜 수집한 데이터 및 전처리 요약
-> 1. `oliveyoung.csv`: 올리브영 사이트의 카테고리 항목에서 스킨케어,마스크팩,클랜징,선케어 4가지의 항목을 크롤링
-> 2. `coos.csv`: COOS 사이트에서 `성분`, `성분의 설명` 데이터 크롤링 <br/>
+> 1. `skincare_qa.csv`: 화장품 관련 카페의 스킨케어 Q&A칸에서 제목, 본문 2가지의 항목을 크롤링
 
-## 올리브영 크롤링
-<img width="864" alt="olive_crw" src="https://github.com/user-attachments/assets/318ce004-9f6c-4dd0-a06d-78b9d50cf804" />
-<img width="864" alt="olive_crw_pro" src="https://github.com/user-attachments/assets/1f74f92b-f959-405b-a032-4c0ffab54c63" />
-<img width="864" alt="olive_crw_using" src="https://github.com/user-attachments/assets/592756a0-0509-43bb-aa01-2f2c166b1309" />
-<img width="864" alt="olive_reviews" src="https://github.com/user-attachments/assets/bb3ec61b-a4f2-4659-8771-a01897aca5fa" />
+<br/>
 
-## 쿠스 크롤링
-<img width="864" alt="coos_crw" src="https://github.com/user-attachments/assets/09da20e2-7178-478a-80fc-eee3f1120590"> </br> 
+
+## 스킨케어 질문 크롤링
+
+  <img width="834" alt="cafe_skincare" src="https://github.com/user-attachments/assets/5adcb03c-bce8-4fb8-91e3-14689d893c14" />
 
 <br/>
 
 ## ☝🏻 전처리 과정
 
-### 🫒 oliveyoung.csv </br> 
-- 원본 데이터  </br> 
-<img width="800" src="https://github.com/user-attachments/assets/03f7d5ea-19a9-4730-83bb-41142f4e9b41"> </br>
+### 🫒 skincare_qa.csv </br> 
+원본 데이터  </br> 
+![image](https://github.com/user-attachments/assets/ba3df277-8d38-484a-9293-844dc4ae7722)
+ </br>
 
-**1. product_name 이름 전처리**
-  - 괄호 `()` 와 대괄호 `[]` 안의 내용 삭제  
-  - 특정 패턴 (예: 숫자+종, 기초 2종, 택1 등) 제거  
-  - 슬래시(`/`) 뒤의 내용 삭제하고 앞 부분만 사용  
-  - 용량 단위 (예: 170ml, 50g 등) 삭제  
-  - 리필, 증정, 기획, 한정 등 마케팅성 문구 삭제  
-  - 마스크팩 관련 숫자+매수 패턴 삭제 (예: 10+1매, 10매)  
-  - `'+'` 기호와 그 주변 공백을 적절히 정리  
-  - 중복된 공백을 하나로 줄이고 양쪽 공백 제거  </br> 
-<img width="800" src="https://github.com/user-attachments/assets/07856015-f137-4f05-8465-8006780a3dde">  </br> 
-<img width="800" src="https://github.com/user-attachments/assets/0dcbbf83-c0c4-48ec-a070-4fda4f9b27c9"> </br> 
-
-**2. usage 전처리**  
-  - 특수기호 (■) 제거   
-<img width="800" src="https://github.com/user-attachments/assets/3e329f19-d1c3-4f90-b80e-cd0b76fe31b7"> </br> 
-<img width="800" src="https://github.com/user-attachments/assets/32da1dfa-a02b-4e80-862e-1455da468c27"> </br> 
- 
-**3. ingredient 전처리** 
-  - 맨 앞 특수기호 (예: `*`, `+`, `/`, `-`, `:`) 제거  
-  - 대괄호 안에 콜론(`:`)으로 시작하는 내용 삭제  
-  - 숫자+ppm 단위 삭제  
-  - 괄호 `()` 와 대괄호 `[]` 안의 내용 삭제  
-  - 숫자+% 삭제  
-  - 특수기호 및 구성품 관련 문구 삭제  
-  - 주석/설명 문장 삭제 (특정 시작 문구 기준)  
-  - 쉼표와 공백 정리  
-<img width="800" src="https://github.com/user-attachments/assets/0293a1ef-c404-4025-abe4-a0a5363d9410"> </br> 
-<img width="800" src="https://github.com/user-attachments/assets/650c7f04-f442-4976-93ce-a2e1a9d712d5"> </br> 
-
-**4. reviews 전처리** 
-  - 줄바꿈 문자 삭제 또는 마침표로 변환  
-  - 괄호 `()`, `[]`, `{}` 등 모든 괄호 제거  
-  - 한글 자음/모음만 있는 경우 마침표로 변환  
-  - 따옴표 제거  
-  - 쉼표 및 마침표 2개 이상 → 하나로 통일  
-  - 중복 공백 제거 및 마침표로 변환  
-  - 가격/수치 정보 삭제 (예: 100%, 5백원)  
-  - 의미가 적은 외래어 및 홍보어 삭제 (예: good, best, 강추 등)  
-  - 한글, 숫자, 공백, 마침표 외 문자 삭제 (이모지 등 포함)  
-  - 표준어 사전을 활용한 오타 및 비표준어 치환 (예: 네용 → 네요, 해용 → 해요 등)
-<img width="800" src="https://github.com/user-attachments/assets/1ec661ff-3bcb-4ab4-9626-27101d750ac5"> </br> 
-<img width="800" src="https://github.com/user-attachments/assets/e25a6c5b-fa3e-4098-b8b2-24eefa7db30f"> </br> </br> 
-
-
-
-### 💄 coos.csv
-- 원본 데이터
-![image](https://github.com/user-attachments/assets/8adc2d02-731e-43af-9ea7-f76c35aee0f9)
-
-<br/>
-
-**1. ingredient 이름 전처리하기**
-   - 줄바꿈 문자 삭제
-   - 영어 삭제
-   - 결과
-  ![image](https://github.com/user-attachments/assets/c9ae5f66-199d-4467-8b7a-61acb516f2a7)
-
-<br/>
-
-**2. NaN 제거하기**
-   - dropna 사용
-  ![image](https://github.com/user-attachments/assets/6b7afef0-a3fe-4e9b-b67c-01979f3993b9)
-
-<br/><br/>
-
-# DB 연동 구현 코드
-[구글 드라이브 링크](https://drive.google.com/drive/u/0/folders/1IpsUk4_NFOL92nppOb0HCspDQQ6YUbRr)
-
-
-### 1️⃣ 벡터 DB 변경
-
-- 초기에는 Faiss를 사용했으나, 대규모 데이터에 최적화된 라이브러리여서  
-  40,000개 정도의 데이터 규모에는 적합하지 않다고 판단
-
-- 스타트업에서 많이 사용하는 Chroma로 변경하여,  
-  LangChain과의 호환성 및 개발 편의성을 높임 </br> 
-
-### 2️⃣ 프롬프트 수정
-- 프롬프트에 구체적인 질문-답변 예시를 포함시켜 모델이 더 정확하고 자연스럽게 응답할 수 있도록 개선 </br> 
-```python
-[질문 & 답변 예시3]
-질문: 세척력 좋은 클렌징폼 추천해줘
-답변:
-세척력이 좋은 클렌징폼을 찾고 계시다면, 모공 속 노폐물까지 깔끔히 제거해주는 제품 위주로 추천드릴게요.
-
-1. 아니스프리 화산송이 모공 클렌징 폼
-   - 추천 이유: 제주 화산송이 파우더가 피지와 노폐물을 강력하게 흡착하여 모공까지 깨끗하게 세정해줌.
-   - 세정력: ★★★★★
-
-2. 라로슈포제 에빠끌라 퓨리파잉 클렌징 젤
-   - 추천 이유: 징크 PCA(피지 조절 성분)와 라로슈포제 온천수가 과도한 유분을 잡아주며 자극 없이 세정함
-   - 세정력: ★★★★
-
-3. AHC 클렌징 폼 (퓨어 리얼 아이 크림 폼)
-   - 추천 이유: 마데카소사이드와 히알루론산이 세정 후에도 피부를 진정시키고 보습을 유지시켜 당김 없이 클렌징 가능
-   - 세정력: ★★★★
-```
+**Title , body 전처리**  
+![image](https://github.com/user-attachments/assets/725e2a43-dabe-4621-99b8-bd3fe45727d1)
+ </br> 
 
 <br/><br/>
 
@@ -356,160 +279,144 @@ mistralai/Mistral-7B-Instruct-v0.1</td>
   <tbody>
     <tr>
       <td>CASE01</td>
-      <td>질문 의도에 적합한 답변 반환</td>
-      <td>건성 피부가 겨울철에 사용할만한 크림 추천해줘</td>
-      <td>화장품 목록 + 실제 사용자의 리뷰</td>
-      <td><img src='https://github.com/user-attachments/assets/1059344b-d9b7-4189-a4b9-03fb6ed5966b'></td>
+      <td>메인페이지에서 회원가입 버튼 클릭시 정상적으로 이동하는지 확인</td>
+      <td>회원가입 버튼 클릭</td>
+      <td>회원가입 페이지로 이동</td>
+      <td><img src="https://github.com/user-attachments/assets/47245cc9-6224-44c6-abb4-f5daab58aeb0"/></td>
     </tr>
     <tr>
       <td>CASE02</td>
-      <td>화장품의 성분을 참고한 답변 반환</td>
-      <td>잡티 제거에 좋은 성분을 가진 화장품은?</td>
-      <td>질문에 알맞는 성분 추천 + 화장품 추천 + 화장품의 주요 성분</td>
-      <td><img src='https://github.com/user-attachments/assets/f099b5a8-4e0e-4a0c-a549-6eab0d7ef1e0'></td>
+      <td>회원가입 시 중복 검사를 통과하고 모든 조건 충족 시 로그인 창으로 이동하는지 확인</td>
+      <td>사용 가능한 아이디/닉네임 + 일치하는 비밀번호 입력 후 회원가입</td>
+      <td>회원가입 완료 후 로그인 창으로 이동</td>
+      <td><img src="https://github.com/user-attachments/assets/49943985-ec84-4d81-bb26-b3d31a18fa6e"/></td>
     </tr>
     <tr>
       <td>CASE03</td>
-      <td>사용자가 실제 사용하고 있는 화장품과의 궁합 반환</td>
-      <td>내가 넘버즈인 글루타치온 흔적 앰플을 가지고 있는데 이거랑 비타민이 함량된 세럼을 같이 써도 돼?</td>
-      <td>질문 의도에 적합한 답변 + 궁합이 좋은 화장품 추천 + 화장품과의 궁합</td>
-      <td><img src='https://github.com/user-attachments/assets/1dd1b90c-c024-4634-b168-bb8e777ca706'></td>
+      <td>로그인 성공 여부에 따라 페이지가 정상적으로 이동하는지 확인</td>
+      <td>정상적인 아이디/비밀번호 입력 후 로그인</td>
+      <td>로그인 성공 시 챗봇 페이지로 이동</td>
+      <td><img src="https://github.com/user-attachments/assets/7896afd1-8502-40e8-a0cd-6adc14651583"></td>
     </tr>
     <tr>
       <td>CASE04</td>
-      <td>특정 기능에 대한 시각화</td>
-      <td>세척력 좋은 클렌징폼 추천해줘</td>
-      <td>세척력이 좋은 화장품 + 화장품의 성분 설명과 함께 추천 이유 전달 + 세정력 시각화</td>
-      <td><img src='https://github.com/user-attachments/assets/2723220b-4cb0-4ef6-8b21-76b59969c516'></td>
+      <td>챗봇이 질문 의도에 따라 RAG 문서를 활용한 적절한 답변을 반환하는지 확인</td>
+      <td>예시 질문: "나는 지성피부야 끈적거리지 않는 앰플을 추천 받고 싶어"</td>
+      <td>질문 의도에 맞는 답변 + 관련 문서 기반 정보 제공</td>
+      <td><img src="https://github.com/user-attachments/assets/d5b24ec7-0890-422b-810b-2fb0d0764593"></td>
+    </tr>
+    <tr>
+      <td>CASE05</td>
+      <td>메시지 입력칸 비우기 버튼이 채팅창 화면이 초기화 되는지 확인</td>
+      <td>입력칸 비우기 버튼 클릭</td>
+      <td>입력란의 텍스트가 아닌, 채팅창 화면이 초기화</td>
+      <td><img src="https://github.com/user-attachments/assets/5be6a89c-5ca3-4934-a75a-a69fa58d258b"></td>
+    </tr
+    <tr>
+      <td>CASE06</td>
+      <td>마이페이지에서 최근 대화 내용을 정확히 불러오는지 확인</td>
+      <td>마이페이지 접속</td>
+      <td>시간 순으로 최근 대화 내용 출력</td>
+      <td><img src="https://github.com/user-attachments/assets/9ea48593-18e6-4e30-8b55-96d121cacad7"></td>
+"></td>
     </tr>
   </tbody>
 </table>
-
 
 
 <br/><br/>
 
 # 수행결과(테스트/시연 페이지)
 ## 🎨 Frontend  
-Figma로 설계된 디자인 시안을 바탕으로,  Streamlit을 통해 간단하고 빠른 사용자 인터페이스를 구현
+Figma로 설계된 디자인 시안을 바탕으로,  HTML,CSS 사용자 인터페이스를 구현
+
+### 🖌️ 화면 설계서(Figma) & 구현 결과 비교
+
+| 메인화면 설계서 | 현재 구현 결과 |
+|-----------------|----------------|
+| ![메인화면](https://github.com/user-attachments/assets/2e5fc06e-dd30-45cb-898f-3b7e4a32e7de) | ![](https://github.com/user-attachments/assets/f50c330b-b149-4292-a4c7-43cec7108e08) |
+| **로그인 화면 설계서** | **로그인 화면 구현** |
+| ![로그인](https://github.com/user-attachments/assets/d5696fc1-0ee5-42f3-a173-4c4ce409361d) | <img src="https://github.com/user-attachments/assets/8a03da95-a7f9-4cc3-8449-f58b3ecef668" width="330"/> 
+| **회원가입 화면 설계서** | **회원가입 화면 구현** |
+ <img src="https://github.com/user-attachments/assets/7306f66c-fd80-4365-9379-4cc9a9faf1be" width="300"> | <img src="https://github.com/user-attachments/assets/fe4ee735-fa8a-4b76-8e96-a896aa84f788" width="330"/>
+| **챗봇 화면 설계서** | **챗봇 화면 구현** |
+   <img src="https://github.com/user-attachments/assets/55f10dc2-ee47-4550-b752-034fb02a19a4" width="300"><br>|<img src="https://github.com/user-attachments/assets/7896afd1-8502-40e8-a0cd-6adc14651583" width=990/>
+---
+
+## 📱 새로 추가된 화면
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/fef2d7ab-0a4a-469a-b423-272d55d02f69" width="300"/>
-  <img src="https://github.com/user-attachments/assets/423424d3-8938-4e8c-8b3f-776d20f7b04e" width="300"/>
-  <img src="https://github.com/user-attachments/assets/0785f9b4-aea6-49dd-9500-b176800a257c" width="300"/>
-</div>
-
-<br/>
-
-## 🛠️ Backend
-
-#### 주요 기능 및 처리 흐름
-##### 모델과 프롬프트 체인 결합  
-- 파인튜닝된 QLoRA 모델과 프롬프트 템플릿을 결합하여 하나의 체인 생성  
-- 프롬프트 내에 대화 이력을 포함하여 문맥을 유지하며 응답 생성 
-</br>
-
-
-<strong>체인 생성</strong>
-
-</br> 
-
-  ```python
-def get_chain_with_model(model):
-    prompt = ChatPromptTemplate.from_messages([
-        ('system', 
-         """
-        당신은 화장품 전문가입니다. 아래 예시처럼 질문에 답변하세요.
-        
-        [1.규칙]
-        (생략)
-        
-        [2.성분 정보 추가 시]
-        (생략)
-        
-        [3.궁합 포인트 추가 시]
-        (생략)
-        
-        [4.추천 이유 추가 시]
-        (생략)
-        
-        [5.세정력 추가 시]
-        (생략)
-        
-        [6.주요 리뷰 추가 시]
-        (생략)
-        
-        [7. 답변 스타일]
-        - 아래 예시처럼 자세하고, 사용자 친화적인 문장으로 작성합니다.
-        
-        [질문 & 답변 예시1~5]
-        ... (생략) ...
-                 """
-         ), 
-        MessagesPlaceholder(variable_name='history'),
-        ('human', '{query}')
-    ])
-    chain = prompt | model
-    return RunnableWithMessageHistory(
-        chain,
-        get_session_history=get_by_session_id,
-        input_messages_key='query',
-        history_messages_key='history'
-    )
-```
-
-</br></br>
-
-## 🔧 Finetuning
-### 사용자 질문 데이터 생성 및 학습  
-- 100개의 예시 사용자 질문 생성
-- 크롤링한 화장품 성분 및 리뷰 문서로 RAG 모델에 질의  
-- 총 100쌍의 질문-답변 초안 데이터를 생성  
-- 이 중 100쌍을 선별하여 QLoRA 기법으로 사전 학습(파인튜닝) 진행 
-</br>
-
-### 대상 모델 
---- 
-#### 🪷 Bllossom/llama-3.2-Korean-Bllossom-3B
-Bllossom 모델을 QLoRA 방식으로 100개 데이터로 파인튜닝한 결과, 초기에는 손실이 빠르게 감소했지만 후반부로 갈수록 수렴 속도가 둔화되었으며, 향후 추가 개선이 필요한 것으로 분석 
-
-<img src="https://github.com/user-attachments/assets/28906fa3-9824-4b20-97a0-58772c5c850c">
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/b6486782-00f6-4927-b0d4-64528b3fa315" width="400"/>
-  <img src="https://github.com/user-attachments/assets/2673e2c2-e5bc-4415-b9ac-dae1753e97e2" width="400"/>
+  <img src="https://github.com/user-attachments/assets/c6781acd-399d-4f57-881a-3e9f2e8b1a25" width="330"/>
 </div>
 
 ---
 
-#### 🌊 mistralai/Mistral-7B-Instruct-v0.1 
-Mistral 모델을 QLoRA 방식으로 100개 데이터에 파인튜닝한 결과, 훈련 손실과 검증 손실이 모두 점차 감소했으며 약 72 스텝 이후 EarlyStopping 조건을 만족하여 학습이 조기에 종료 
+위와 같이 Figma의 예시 화면과 실제 구현된 화면을 나란히 비교하여 한눈에 볼 수 있도록 정리했습니다.
 
-<img src="https://github.com/user-attachments/assets/0a8fc297-a32a-42f5-a46b-7e2f20ea6f7f">
-<img src="https://github.com/user-attachments/assets/f83893ec-25e1-43b5-8dad-3f94d5de241e">
+</br> 
+</br>
+
+### 시연
+#### 회원가입 & 로그인
+![Image](https://github.com/user-attachments/assets/22bbeb97-a785-452f-9a3b-f1065bcfe560)
+
+</br> 
+
+
+</br> </br> 
+
+
+
+
+## 🛠️ Backend
+
+#### 주요 기능 및 처리 흐름
+##### ...
 
 </br></br>
 
 # 🚨 개선 사항
+<img src="https://github.com/user-attachments/assets/018e5918-d92b-4038-8519-d84c576f7ae7" width=750/>
 
-1. **QLoRA 파인튜닝 모델 성능 한계**  
-   현재 사용된 QLoRA 파인튜닝 모델은 약 100개의 QA 데이터셋으로 학습되었기 때문에,  
-   다양한 질문에 대한 일반화 성능에 한계가 있습니다.  
-   향후에는 보다 많은 데이터를 추가하여 학습시킴으로써 모델의 응답 품질을 향상시킬 예정입니다.
+> ※ 3차 때 개선 사항
 
-2. **웹 버전 UI 개선 계획**  
-   현재 PiBoo의 사용자 인터페이스는 모바일 최적화된 휴대폰 화면 형태로 디자인되어 있습니다.  
-   하지만 다음 프로젝트에서는 Django와 HTML 기반의 웹사이트 제작을 배우게 되어,  
-   웹 버전 형태로 구현하여 다양한 환경에서도 원활하게 사용할 수 있도록 개선할 계획입니다.
+---
+## 1. 모델 성능 개선
 
-3. **문서 임베딩 처리 오류 개선**  
-   현재 문서 임베딩 과정에서 토큰 수가 많은 리뷰 데이터가 포함될 경우,  
-   임베딩 처리 중 오류가 발생하거나 VectorDB에 저장되지 않는 문제가 발생합니다.  
-   이를 해결하기 위해 리뷰 데이터를 요약하여 토큰 수를 줄이고, 오류를 최소화하는 방안을 적용할 예정입니다.
-</br> 
+기존 QLoRA 파인튜닝 모델은 약 100개의 QA 데이터로 학습되어 **일반화 성능에 한계**가 있었습니다.  
+이를 개선하기 위해 `EleutherAI/polyglot-ko-1.3b` 모델로 교체하고,  
+**약 3,000개의 QA 쌍**을 새롭게 구축하여 재학습을 진행했습니다.
+
+- ✅ **결과**: Loss는 일부 감소했으나, 응답 정확도와 일관성은 여전히 부족함
+- 🔧 **계획**: 더 많은 **고품질 QA 데이터 확보** 및 **추가 학습** 진행 예정
+
+---
+
+## 2. 웹 버전 UI 개선
+
+기존 UI는 **모바일에 최적화된 화면**만 제공되어 다양한 환경에서 사용하기 어려웠습니다.  
+이를 해결하기 위해 **Django + HTML 기반 웹 UI**로 전환하여,  
+**데스크탑 환경에서도 접근이 용이하도록 개선** 했습니다.
+
+---
+
+## 3. 문서 임베딩 처리 오류 개선
+
+리뷰 데이터가 길어 토큰 수가 많은 경우,  
+임베딩 과정에서 오류가 발생하거나 VectorDB에 저장되지 않는 문제가 있었습니다.
+
+- 🔍 **기존 문제**: 긴 리뷰 데이터 → 처리 오류 발생
+- ✅ **개선 방향**:  
+  - 긴 리뷰 100개를 분석하여  
+    **핵심 리뷰 약 5개**, **중요 키워드 5개**, **전체 요약 1개**를 생성  
+  - 토큰 수를 줄여 **오류 최소화** 및 **요약 기반 응답 품질 향상** 시도
+    
+</br> </br>  
 
 # ✅ 한 줄 회고
 | 팀원  | 한 줄 회고                 |
 |-------|----------------------------|
-| 미송  | 처음으로 Figma로 UI를 설계하고 Streamlit으로 직접 구현하면서 시행착오를 겪으며 프론트엔드의 흐름을 익혔고, 파인튜닝에도 도전해본 경험이 특히 의미 있었다. 이번 프로젝트를 통해 AI 서비스 개발의 전체적인 구조와 협업 방식, 다양한 도구의 활용법을 폭넓게 배울 수 있었다 |
-| 정현  | 크롤링과 LangChain을 직접 실습해보며 이해를 더욱 깊이 할 수 있는 좋은 시간이었습니다. 저는 이번에 QLoRA를 시도해보지 못해서, 다음 기회에 학습시켜보고 싶습니다. |
-| 유경  | RAG 흐름과 VectorDB 구축에 대해 정확히 공부할 수 있었고, 적은 데이터였더라도 파인튜닝을 해보면서 이해도를 높일 수 있었습니다! 다들 너무 수고 많았고, 다음 4회차 프로젝트로 파이팅합시다~  |
-| 성지  | 크롤링과 전처리 과정은 비교적 수월했지만, 모델을 생성하고 학습시키는 과정에서는 다양한 오류와 제약에 부딪히며 아쉬움이 컸다. 이번 프로젝트를 통해 단순한 모델 사용을 넘어, LLM의 구조 설계와 프롬프트 구성의 중요성을 깊이 체감할 수 있었다 |
+| 미송  | - |
+| 정현  | - |
+| 유경  | - |
+| 성지  | - |
